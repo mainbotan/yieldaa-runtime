@@ -8,10 +8,13 @@ import (
 
 func main() {
 	preset, err := preset.LoadPreset("./../../sources/presets/package/")
-
 	if err != nil {
 		log.Fatal("Failed to load preset: ", err)
 	}
 
-	fmt.Printf("Loaded preset: %s v%s\n", preset.Name, preset.Version)
+	fmt.Printf("%s v%s | entities: %d | hash: %08x | size: %d bytes\n",
+		preset.Name, preset.Version,
+		preset.EntitiesCount,
+		preset.EntitiesStructureHash,
+		preset.EntitiesTotalSize)
 }

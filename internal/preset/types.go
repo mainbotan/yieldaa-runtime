@@ -1,5 +1,7 @@
 package preset
 
+import "time"
+
 type Package struct {
 	Version      string            `yaml:"version" json:"version"`
 	Name         string            `yaml:"name" json:"name"`
@@ -7,13 +9,20 @@ type Package struct {
 	Description  string            `yaml:"description,omitempty" json:"description,omitempty"`
 	Tags         []string          `yaml:"tags,omitempty" json:"tags,omitempty"`
 	Dependencies map[string]string `yaml:"dependencies,omitempty" json:"dependencies,omitempty"`
-	Entities     []Entity          `yaml:"-" json:"entities"`
+
+	EntitiesFiles         []EntityFile `yaml:"-" json:"entities_files"`
+	EntitiesCount         int          `yaml:"-" json:"entities_count"`
+	EntitiesTotalSize     int64        `yaml:"-" json:"entities_total_size"`
+	EntitiesStructureHash uint32       `yaml:"-" json:"entities_structure_hash"`
+
+	Entities []Entity `yaml:"-" json:"-"`
 }
 
-type Config struct {
-	Version string `json:"version"`
-	Name    string `json:"name"`
-	Region  string `json:"string"`
+type EntityFile struct {
+	Path        string    `json:"path"`
+	Size        int64     `json:"size"`
+	ModTime     time.Time `json:"mod_time"`
+	ContentHash uint32    `json:"content_hash,omitempty"`
 }
 
 type Entity struct {
