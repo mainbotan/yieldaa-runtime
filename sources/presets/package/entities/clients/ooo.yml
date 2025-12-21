@@ -1,6 +1,6 @@
 module: crm
 object: client
-group: requisites
+property: requisite
 code: legal_entity
 name: ООО
 fields:
