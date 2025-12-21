@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// pre-scan entities - collect meta
 func ScanEntities(dir string) ([]EntityFile, error) {
 	var files []EntityFile
 
