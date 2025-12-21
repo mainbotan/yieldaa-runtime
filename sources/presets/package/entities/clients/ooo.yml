@@ -24,8 +24,8 @@ fields:
     
   - code: registration_date
     name: Дата регистрации
-    type: date
-    format: "YYYY-MM-DD"
+    type: string
+    pattern: "YYYY-MM-DD"
     required: true
     
   - code: full_name

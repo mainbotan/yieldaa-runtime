@@ -9,9 +9,9 @@ import (
 	"strings"
 )
 
-// centralized entrypoint
+// preset loader
 func LoadPreset(dir string) (*Package, error) {
-	// conf
+	// scan package.yml
 	packageData, err := loadConfig(dir)
 	if err != nil {
 		return nil, fmt.Errorf("package load failed: %w", err)
@@ -20,7 +20,7 @@ func LoadPreset(dir string) (*Package, error) {
 	// scan entities
 	entitiesDir := filepath.Join(dir, "entities")
 	if _, err := os.Stat(entitiesDir); os.IsNotExist(err) {
-		return packageData, nil // Пресет может не иметь entities
+		return nil, fmt.Errorf("package does not have entities in the /entities directory")
 	}
 	entityFiles, err := ScanEntities(entitiesDir)
 	if err != nil {
@@ -42,11 +42,10 @@ func LoadPreset(dir string) (*Package, error) {
 	return packageData, nil
 }
 
-// calculateStructureHash - вычисляет хеш структуры entities
+// structure hash
 func calculateStructureHash(files []EntityFile) uint32 {
 	hash := crc32.NewIEEE()
 	for _, f := range files {
-		// Используем относительный путь для детерминированности
 		relPath := strings.TrimPrefix(f.Path, filepath.Dir(f.Path)+string(os.PathSeparator))
 		hash.Write([]byte(relPath))
 		binary.Write(hash, binary.LittleEndian, f.Size)

@@ -1,8 +1,5 @@
-module: crm
 object: client
 property: requisite
-code: individual
-name: ИП
 fields:
   - code: inn
     name: ИНН

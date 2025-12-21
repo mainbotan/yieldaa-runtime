@@ -1,20 +1,18 @@
+// main.go
 package main
 
 import (
-	"fmt"
-	"log"
+	"os"
 	"yielda/runtime/internal/preset"
 )
 
 func main() {
-	preset, err := preset.LoadPreset("./../../sources/presets/package/")
-	if err != nil {
-		log.Fatal("Failed to load preset: ", err)
-	}
+	pkg, processed, fatalErrs := preset.LoadAndProcessPreset(
+		"./../../sources/presets/package3/", 5)
 
-	fmt.Printf("%s v%s | entities: %d | hash: %08x | size: %d bytes\n",
-		preset.Name, preset.Version,
-		preset.EntitiesCount,
-		preset.EntitiesStructureHash,
-		preset.EntitiesTotalSize)
+	preset.PrintResults(pkg, processed, fatalErrs)
+
+	if len(fatalErrs) > 0 || preset.HasValidationErrors(processed) {
+		os.Exit(1)
+	}
 }

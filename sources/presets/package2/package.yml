@@ -1,7 +1,7 @@
 version: 0.0.1
-name: Test preset
+name: Empty
 region: ru
-description: Test preset
+description: Empty preset
 tags: 
   - ru
   - base

@@ -25,6 +25,16 @@ type EntityFile struct {
 	ContentHash uint32    `json:"content_hash,omitempty"`
 }
 
+type ProcessedEntity struct {
+	File        EntityFile     // Метаданные файла
+	ContentHash uint32         // Хеш содержимого
+	JSONData    []byte         // YAML → JSON (готовый для сохранения)
+	ParsedData  map[string]any // ТОЛЬКО для быстрой валидации
+	Schema      map[string]any // Будущая JSON Schema (позже)
+	Errors      []string       // Ошибки валидации
+	FatalError  error          // Фатальная ошибка чтения/конвертации
+}
+
 type Entity struct {
 	Module   string  `json:"module"`
 	Object   string  `json:"object"`
