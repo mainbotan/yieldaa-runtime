@@ -1,14 +1,11 @@
 package preset
 
 import (
-	"encoding/json"
 	"fmt"
 	"hash/crc32"
 	"os"
 	"sync"
 	"time"
-
-	"github.com/ghodss/yaml"
 )
 
 func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []error) {
@@ -60,7 +57,7 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 				seenHashes.Store(contentHash, true)
 
 				// total file process
-				result := processEntityWithContent(file, content, contentHash)
+				result := ProcessEntity(file)
 
 				if result.FatalError != nil {
 					errors <- fmt.Errorf("%s: %w", file.Path, result.FatalError)
@@ -118,40 +115,4 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 	}
 
 	return processed, fatalErrors
-}
-
-// processEntityWithContent
-func processEntityWithContent(file EntityFile, content []byte, contentHash uint32) ProcessedEntity {
-	result := ProcessedEntity{
-		File:        file,
-		ContentHash: contentHash,
-	}
-
-	// YAML → JSON
-	jsonData, err := yaml.YAMLToJSON(content)
-	if err != nil {
-		result.FatalError = fmt.Errorf("YAML→JSON: %w", err)
-		return result
-	}
-	result.JSONData = jsonData
-
-	// validation round 1
-	var parsed map[string]any
-	if err := json.Unmarshal(jsonData, &parsed); err != nil {
-		result.FatalError = fmt.Errorf("invalid JSON: %w", err)
-		return result
-	}
-	result.ParsedData = parsed
-
-	// validation round 2
-	if errs := validateStructure(parsed); len(errs) > 0 {
-		result.Errors = append(result.Errors, errs...)
-	}
-
-	// validation round 3
-	if errs := validateFieldsDirectly(parsed); len(errs) > 0 {
-		result.Errors = append(result.Errors, errs...)
-	}
-
-	return result
 }

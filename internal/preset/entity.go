@@ -46,6 +46,17 @@ func ProcessEntity(file EntityFile) ProcessedEntity {
 		result.Errors = append(result.Errors, errs...)
 	}
 
+	// generate schema
+	if result.FatalError == nil && len(result.Errors) == 0 {
+		schema, err := GenerateJSONSchema(result.ParsedData)
+		if err != nil {
+			result.Errors = append(result.Errors,
+				fmt.Sprintf("JSON Schema generation failed: %v", err))
+		} else {
+			result.Schema = schema
+		}
+	}
+
 	return result
 }
 
@@ -87,56 +98,47 @@ func validateFieldsDirectly(data map[string]any) []string {
 			continue
 		}
 
-		// code [required]
-		code, _ := field["code"].(string)
+		code, typeStr := getFieldCodeAndType(field)
 		if code == "" {
 			errors = append(errors, fmt.Sprintf("field[%d]: missing code", i))
 			continue
 		}
 
-		// code unique [-]
 		if seenCodes[code] {
 			errors = append(errors, fmt.Sprintf("duplicate field code: %s", code))
 		}
 		seenCodes[code] = true
 
-		// type checking
-		typeStr, _ := field["type"].(string)
 		if !isValidType(typeStr) {
 			errors = append(errors, fmt.Sprintf("field %s: invalid type '%s'", code, typeStr))
 			continue
 		}
 
-		// type checking
-		switch typeStr {
-		case "enum":
-			if values, ok := field["values"].([]any); !ok || len(values) == 0 {
-				errors = append(errors, fmt.Sprintf("field %s: enum requires values array", code))
+		if pattern, ok := field["pattern"].(string); ok && pattern != "" {
+			if valid, errMsg := validatePattern(pattern); !valid {
+				errors = append(errors, fmt.Sprintf("field %s: %s", code, errMsg))
 			}
-		case "string":
-			// min/max length checking
-			if min, ok := field["min"].(float64); ok && min < 0 {
-				errors = append(errors, fmt.Sprintf("field %s: min cannot be negative", code))
+		}
+
+		if min := getNumberValue(field, "min"); min != nil {
+			max := getNumberValue(field, "max")
+			if minMaxErrs := validateMinMax(min, max, typeStr); len(minMaxErrs) > 0 {
+				for _, err := range minMaxErrs {
+					errors = append(errors, fmt.Sprintf("field %s: %s", code, err))
+				}
+			}
+		}
+
+		if typeStr == "enum" {
+			if values, ok := field["values"].([]any); ok {
+				if valid, errMsg := validateEnumValues(values); !valid {
+					errors = append(errors, fmt.Sprintf("field %s: %s", code, errMsg))
+				}
+			} else {
+				errors = append(errors, fmt.Sprintf("field %s: enum requires values array", code))
 			}
 		}
 	}
 
 	return errors
-}
-
-func isValidType(t string) bool {
-	switch t {
-	case "string", "number", "integer", "boolean", "enum":
-		return true
-	default:
-		return false
-	}
-}
-
-func GenerateJSONSchema(parsed map[string]any) (map[string]any, error) {
-	// now that
-	return map[string]any{
-		"$schema": "https://json-schema.org/draft/2020-12/schema",
-		"type":    "object",
-	}, nil
 }

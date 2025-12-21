@@ -15,7 +15,7 @@ type Package struct {
 	EntitiesTotalSize     int64        `yaml:"-" json:"entities_total_size"`
 	EntitiesStructureHash uint32       `yaml:"-" json:"entities_structure_hash"`
 
-	Entities []Entity `yaml:"-" json:"-"`
+	Entities []RowEntity `yaml:"-" json:"-"`
 }
 
 type EntityFile struct {
@@ -30,21 +30,50 @@ type ProcessedEntity struct {
 	ContentHash uint32         // Хеш содержимого
 	JSONData    []byte         // YAML → JSON (готовый для сохранения)
 	ParsedData  map[string]any // ТОЛЬКО для быстрой валидации
-	Schema      map[string]any // Будущая JSON Schema (позже)
+	Schema      map[string]any `json:"schema"` // JSON Schema
 	Errors      []string       // Ошибки валидации
 	FatalError  error          // Фатальная ошибка чтения/конвертации
 }
 
-type Entity struct {
-	Module   string  `json:"module"`
-	Object   string  `json:"object"`
-	Property string  `json:"property"`
-	Code     string  `json:"code"`
-	Name     string  `json:"name"`
-	Fields   []Field `json:"fields"`
+type EntityOutput struct {
+	Metadata   EntityMetadata   `json:"metadata"`
+	ParsedData map[string]any   `json:"parsed_data"`
+	JSONData   string           `json:"json_data,omitempty"`
+	Schema     map[string]any   `json:"schema"`
+	Validation ValidationResult `json:"validation"`
 }
 
-type Field struct {
+type ValidationResult struct {
+	IsValid    bool     `json:"is_valid"`
+	HasFatal   bool     `json:"has_fatal"`
+	ErrorCount int      `json:"error_count"`
+	Errors     []string `json:"errors,omitempty"`
+	FatalError string   `json:"fatal_error,omitempty"`
+}
+
+type EntityMetadata struct {
+	Module      string    `json:"module"`
+	Object      string    `json:"object"`
+	Property    string    `json:"property"`
+	Code        string    `json:"code"`
+	Name        string    `json:"name"`
+	SourceFile  string    `json:"source_file"`
+	FileSize    int64     `json:"file_size"`
+	ModTime     time.Time `json:"mod_time"`
+	ContentHash string    `json:"content_hash"`
+	ProcessedAt time.Time `json:"processed_at"`
+}
+
+type RowEntity struct {
+	Module   string     `json:"module"`
+	Object   string     `json:"object"`
+	Property string     `json:"property"`
+	Code     string     `json:"code"`
+	Name     string     `json:"name"`
+	Fields   []RowField `json:"fields"`
+}
+
+type RowField struct {
 	Code     string    `json:"code"`
 	Name     string    `json:"name"`
 	Type     FieldType `json:"type"`

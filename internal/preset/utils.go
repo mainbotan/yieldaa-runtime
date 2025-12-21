@@ -1,7 +1,10 @@
 package preset
 
 import (
+	"fmt"
 	"os"
+	"regexp"
+	"strconv"
 	"strings"
 )
 
@@ -49,4 +52,112 @@ func ShortPath(path string, maxLen int) string {
 		result = "…/" + result
 	}
 	return result
+}
+
+func normalizePattern(pattern string) string {
+	if pattern == "YYYY-MM-DD" {
+		return `^\d{4}-\d{2}-\d{2}$`
+	}
+
+	re := regexp.MustCompile(`\\\\([0-9])`)
+	return re.ReplaceAllString(pattern, `\$1`)
+}
+
+func getFloat(field map[string]any, key string) (float64, bool) {
+	if val, ok := field[key]; ok {
+		switch v := val.(type) {
+		case float64:
+			return v, true
+		case int:
+			return float64(v), true
+		case string:
+			if f, err := strconv.ParseFloat(v, 64); err == nil {
+				return f, true
+			}
+		}
+	}
+	return 0, false
+}
+
+func getNumberValue(field map[string]any, key string) *float64 {
+	if val, ok := field[key]; ok {
+		switch v := val.(type) {
+		case float64:
+			return &v
+		case int:
+			f := float64(v)
+			return &f
+		case string:
+			if f, err := strconv.ParseFloat(v, 64); err == nil {
+				return &f
+			}
+		}
+	}
+	return nil
+}
+
+func validatePattern(pattern string) (bool, string) {
+	if pattern == "" {
+		return true, ""
+	}
+
+	if pattern == "YYYY-MM-DD" {
+		return true, ""
+	}
+
+	if _, err := regexp.Compile(pattern); err != nil {
+		return false, fmt.Sprintf("invalid regex pattern: %v", err)
+	}
+
+	return true, ""
+}
+
+func validateMinMax(min, max *float64, fieldType string) []string {
+	var errors []string
+
+	if min != nil && max != nil && *min > *max {
+		errors = append(errors, "min cannot be greater than max")
+	}
+
+	if fieldType == "string" && min != nil && *min < 0 {
+		errors = append(errors, "min cannot be negative for string")
+	}
+
+	return errors
+}
+
+func normalizePatternForSchema(pattern string) string {
+	if pattern == "YYYY-MM-DD" {
+		return "^\\d{4}-\\d{2}-\\d{2}$"
+	}
+	return pattern
+}
+
+func isValidType(t string) bool {
+	switch t {
+	case "string", "number", "integer", "boolean", "enum":
+		return true
+	default:
+		return false
+	}
+}
+
+func getFieldCodeAndType(field map[string]any) (code, fieldType string) {
+	code, _ = field["code"].(string)
+	fieldType, _ = field["type"].(string)
+	return
+}
+
+func validateEnumValues(values []any) (bool, string) {
+	if values == nil || len(values) == 0 {
+		return false, "enum requires values array"
+	}
+
+	for i, val := range values {
+		if _, ok := val.(string); !ok {
+			return false, fmt.Sprintf("enum value at index %d is not a string", i)
+		}
+	}
+
+	return true, ""
 }
