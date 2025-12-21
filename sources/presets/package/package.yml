@@ -1,3 +1,8 @@
 version: 0.0.1
 name: Тестовый пресет
-region: RU
+region: ru
+description: "Тестовый пресет"
+tags: 
+  - ru
+  - base
+  - test

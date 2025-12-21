@@ -1,6 +1,16 @@
 package preset
 
 type Package struct {
+	Version      string            `yaml:"version" json:"version"`
+	Name         string            `yaml:"name" json:"name"`
+	Region       string            `yaml:"region" json:"region"`
+	Description  string            `yaml:"description,omitempty" json:"description,omitempty"`
+	Tags         []string          `yaml:"tags,omitempty" json:"tags,omitempty"`
+	Dependencies map[string]string `yaml:"dependencies,omitempty" json:"dependencies,omitempty"`
+	Entities     []Entity          `yaml:"-" json:"entities"`
+}
+
+type Config struct {
 	Version string `json:"version"`
 	Name    string `json:"name"`
 	Region  string `json:"string"`
