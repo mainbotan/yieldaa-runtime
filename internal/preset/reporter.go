@@ -9,7 +9,7 @@ import (
 func PrintResults(pkg *Package, processed []ProcessedEntity, fatalErrs []error) {
 	// Header
 	fmt.Printf("%s v%s\n", pkg.Name, pkg.Version)
-	fmt.Printf("files:%d size:%.1fKB hash:%08x\n\n",
+	fmt.Printf("files:%d size:%.1fKB control_hash:%08x\n\n",
 		pkg.EntitiesCount, float64(pkg.EntitiesTotalSize)/1024, pkg.EntitiesStructureHash)
 
 	// Processing stats
