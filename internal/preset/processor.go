@@ -36,7 +36,6 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 			for file := range jobs {
 				progress.StartJob()
 
-				// content hash before entity validation
 				content, err := os.ReadFile(file.Path)
 				if err != nil {
 					errors <- fmt.Errorf("%s: read: %w", file.Path, err)
@@ -46,17 +45,12 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 
 				contentHash := crc32.ChecksumIEEE(content)
 
-				// checking hash unique
-				if _, alreadyProcessed := seenHashes.Load(contentHash); alreadyProcessed {
-					// skip duplicate
+				// Atomic check and store
+				if _, alreadyProcessed := seenHashes.LoadOrStore(contentHash, true); alreadyProcessed {
 					progress.CompleteJob()
 					continue
 				}
 
-				// set as processed
-				seenHashes.Store(contentHash, true)
-
-				// total file process
 				result := ProcessEntity(file)
 
 				if result.FatalError != nil {

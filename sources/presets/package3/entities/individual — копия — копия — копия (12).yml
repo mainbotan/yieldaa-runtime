@@ -2,7 +2,7 @@ module: crm
 object: client
 property: requisite
 code: individual
-name: ИП
+name: ИПi09i09
 fields:
   - code: inn
     name: ИНН
