@@ -1,0 +1,69 @@
+module: crm
+object: client
+property: requisite
+code: individual
+name: ИП
+fields:
+  - code: inn
+    name: ИНН
+    type: string
+    pattern: "^(a+)+$"
+    required: true
+    min: 1
+    max: 10000
+
+  - code: email
+    name: Email
+    type: string
+    pattern: "^([a-zA-Z0-9]+([._%+-]?[a-zA-Z0-9]+)*)+@([a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*\\.[a-zA-Z]{2,})+$"
+    required: false
+    min: 1
+    max: 10000
+
+  - code: evil_array
+    name: Evil Array
+    type: array
+    min_items: 0
+    max_items: 1000000
+    items:
+      type: object
+      properties:
+        recursive:
+          type: array
+          items:
+            type: object
+            properties:
+              nested:
+                type: array
+                items: {$ref: "#/definitions/evil_array"}
+
+  - code: memory_bomb
+    name: Memory Bomb
+    type: string
+    pattern: "^.*$"
+    min: 0
+    max: 1000000000
+    required: true
+
+  - code: infinite_recursion
+    name: Infinite Recursion
+    type: object
+    ref: "crm.client.requisite.individual"
+    required: false
+
+  - code: enum_dos
+    name: Enum DOS
+    type: enum
+    values:
+      - "value_1"
+      - "value_2"
+      - "value_3"
+      # ... 10000 значений в реальном файле
+    required: false
+
+  - code: redos_phone
+    name: Phone
+    type: string
+    pattern: "^\\+?7?8?\\s*\\(?\\d{3}\\)?\\s*\\d{3}\\s*-?\\s*\\d{2}\\s*-?\\s*\\d{2}$"
+    # много optional групп с overlapping
+    required: false

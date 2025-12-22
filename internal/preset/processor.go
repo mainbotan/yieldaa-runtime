@@ -57,18 +57,15 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 
 				result := ProcessEntity(file, content)
 
-				// 🔥 Проверяем уникальность ключа сущности
+				// check entity key
 				if result.ParsedData != nil && result.FatalError == nil {
 					key := EntityKey(result.ParsedData)
 					if key != "" {
-						// Проверяем, был ли уже такой ключ
 						if existingFile, exists := seenKeys.LoadOrStore(key, file.Path); exists {
-							// Добавляем ошибку в результат
 							result.Errors = append(result.Errors,
 								fmt.Sprintf("entity key conflict: '%s' already defined in '%s'",
 									key, existingFile.(string)))
 
-							// Сохраняем конфликт для отчета
 							conflictsMu.Lock()
 							keyConflicts = append(keyConflicts,
 								fmt.Sprintf("  %s:\n    • %s\n    • %s",
