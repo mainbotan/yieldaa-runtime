@@ -1,7 +1,7 @@
 module: crm
 object: client
 property: requisite
-code: legal_entity
+code: individual
 name: ООО
 fields:
   - code: inn

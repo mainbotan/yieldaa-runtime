@@ -3,19 +3,12 @@ package preset
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 
 	"github.com/ghodss/yaml"
 )
 
-func ProcessEntity(file EntityFile) ProcessedEntity {
+func ProcessEntity(file EntityFile, data []byte) ProcessedEntity {
 	result := ProcessedEntity{File: file}
-
-	data, err := os.ReadFile(file.Path)
-	if err != nil {
-		result.FatalError = fmt.Errorf("read: %w", err)
-		return result
-	}
 
 	// xxHash64 вместо CRC32
 	result.ContentHash = calculateContentHash(data)

@@ -25,7 +25,11 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 	errors := make(chan error, len(files))
 
 	var wg sync.WaitGroup
-	var seenHashes sync.Map // thread-safe access
+	var seenHashes sync.Map   // thread-safe для хешей контента
+	var seenKeys sync.Map     // thread-safe для проверки ключей сущностей
+	var keyConflicts []string // для сбора конфликтов
+
+	var conflictsMu sync.Mutex // мьютекс для keyConflicts
 
 	// Workers
 	for i := 0; i < maxWorkers; i++ {
@@ -51,7 +55,28 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 					continue
 				}
 
-				result := ProcessEntity(file)
+				result := ProcessEntity(file, content)
+
+				// 🔥 Проверяем уникальность ключа сущности
+				if result.ParsedData != nil && result.FatalError == nil {
+					key := EntityKey(result.ParsedData)
+					if key != "" {
+						// Проверяем, был ли уже такой ключ
+						if existingFile, exists := seenKeys.LoadOrStore(key, file.Path); exists {
+							// Добавляем ошибку в результат
+							result.Errors = append(result.Errors,
+								fmt.Sprintf("entity key conflict: '%s' already defined in '%s'",
+									key, existingFile.(string)))
+
+							// Сохраняем конфликт для отчета
+							conflictsMu.Lock()
+							keyConflicts = append(keyConflicts,
+								fmt.Sprintf("  %s:\n    • %s\n    • %s",
+									key, existingFile.(string), file.Path))
+							conflictsMu.Unlock()
+						}
+					}
+				}
 
 				if result.FatalError != nil {
 					errors <- fmt.Errorf("%s: %w", file.Path, result.FatalError)
