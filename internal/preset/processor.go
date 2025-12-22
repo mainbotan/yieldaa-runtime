@@ -2,7 +2,6 @@ package preset
 
 import (
 	"fmt"
-	"hash/crc32"
 	"os"
 	"sync"
 	"time"
@@ -14,7 +13,7 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 	}
 
 	if maxWorkers <= 0 {
-		maxWorkers = 10
+		maxWorkers = DefaultWorkers
 	}
 	if maxWorkers > len(files) {
 		maxWorkers = len(files)
@@ -43,7 +42,8 @@ func ProcessEntities(files []EntityFile, maxWorkers int) ([]ProcessedEntity, []e
 					continue
 				}
 
-				contentHash := crc32.ChecksumIEEE(content)
+				// xxHash64 вместо CRC32
+				contentHash := calculateContentHash(content)
 
 				// Atomic check and store
 				if _, alreadyProcessed := seenHashes.LoadOrStore(contentHash, true); alreadyProcessed {

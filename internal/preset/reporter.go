@@ -8,7 +8,7 @@ import (
 
 func PrintResults(pkg *Package, processed []ProcessedEntity, fatalErrs []error) {
 	// Header
-	fmt.Printf("%s v%s\n", pkg.Name, pkg.Version)
+	fmt.Printf("\n%s v%s\n", pkg.Name, pkg.Version)
 	fmt.Printf("files:%d size:%.1fKB control_hash:%08x\n\n",
 		pkg.EntitiesCount, float64(pkg.EntitiesTotalSize)/1024, pkg.EntitiesStructureHash)
 
@@ -33,7 +33,7 @@ func PrintResults(pkg *Package, processed []ProcessedEntity, fatalErrs []error) 
 
 			path := ShortPath(p.File.Path, 40)
 			size := fmt.Sprintf("%.1fK", float64(p.File.Size)/1024)
-			hash := fmt.Sprintf("%08x", p.ContentHash)
+			hash := p.ContentHash
 
 			fmt.Fprintf(w, "%s\t%s\t%s\t%s\n", status, path, size, hash)
 		}

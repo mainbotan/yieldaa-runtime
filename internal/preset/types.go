@@ -22,12 +22,12 @@ type EntityFile struct {
 	Path        string    `json:"path"`
 	Size        int64     `json:"size"`
 	ModTime     time.Time `json:"mod_time"`
-	ContentHash uint32    `json:"content_hash,omitempty"`
+	ContentHash string    `json:"content_hash,omitempty"`
 }
 
 type ProcessedEntity struct {
 	File        EntityFile     // Метаданные файла
-	ContentHash uint32         // Хеш содержимого
+	ContentHash string         // Хеш содержимого
 	JSONData    []byte         // YAML → JSON (готовый для сохранения)
 	ParsedData  map[string]any // ТОЛЬКО для быстрой валидации
 	Schema      map[string]any `json:"schema"` // JSON Schema
@@ -101,4 +101,9 @@ const (
 	TypeInteger FieldType = "integer"
 	TypeBoolean FieldType = "boolean"
 	TypeEnum    FieldType = "enum"
+)
+
+const (
+	JSONSchemaDraft = "https://json-schema.org/draft/2020-12/schema"
+	DefaultWorkers  = 10
 )

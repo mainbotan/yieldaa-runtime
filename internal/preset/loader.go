@@ -1,12 +1,9 @@
 package preset
 
 import (
-	"encoding/binary"
 	"fmt"
-	"hash/crc32"
 	"os"
 	"path/filepath"
-	"strings"
 )
 
 // preset loader
@@ -40,16 +37,4 @@ func LoadPreset(dir string) (*Package, error) {
 	packageData.EntitiesStructureHash = calculateStructureHash(entityFiles)
 
 	return packageData, nil
-}
-
-// structure hash
-func calculateStructureHash(files []EntityFile) uint32 {
-	hash := crc32.NewIEEE()
-	for _, f := range files {
-		relPath := strings.TrimPrefix(f.Path, filepath.Dir(f.Path)+string(os.PathSeparator))
-		hash.Write([]byte(relPath))
-		binary.Write(hash, binary.LittleEndian, f.Size)
-		binary.Write(hash, binary.LittleEndian, f.ModTime.Unix())
-	}
-	return hash.Sum32()
 }

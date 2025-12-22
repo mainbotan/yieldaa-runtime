@@ -5,12 +5,12 @@
       "object": "client",
       "property": "requisite",
       "code": "individual",
-      "name": "ИП",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия (12) — копия — копия.yml",
-      "file_size": 1234,
-      "mod_time": "2025-12-21T23:53:44.3262245+03:00",
-      "content_hash": "ed88c266",
-      "processed_at": "2025-12-22T03:27:40.2599796+03:00"
+      "name": "ИПфывфыв",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия (144) — копия.yml",
+      "file_size": 1246,
+      "mod_time": "2025-12-22T04:28:48.5790445+03:00",
+      "content_hash": "2ce9b07869e9d760",
+      "processed_at": "2025-12-22T04:42:30.1131987+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -83,11 +83,11 @@
         }
       ],
       "module": "crm",
-      "name": "ИП",
+      "name": "ИПфывфыв",
       "object": "client",
       "property": "requisite"
     },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПфывфыв\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
     "schema": {
       "$id": "/crm/client/individual/schema.json",
       "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -155,7 +155,172 @@
         "tax_system",
         "registration_address"
       ],
-      "title": "ИП",
+      "title": "ИПфывфыв",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИПТ",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия (143) — копия — копия.yml",
+      "file_size": 1236,
+      "mod_time": "2025-12-22T04:30:44.117063+03:00",
+      "content_hash": "8d3dd4b176fd982a",
+      "processed_at": "2025-12-22T04:42:30.1131987+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИПТ",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПТ\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИПТ",
       "type": "object"
     },
     "validation": {
@@ -171,11 +336,11 @@
       "property": "requisite",
       "code": "individual",
       "name": "ИПП",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия (21).yml",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия (100) — копия.yml",
       "file_size": 1236,
       "mod_time": "2025-12-22T00:52:35.8537661+03:00",
-      "content_hash": "cd2aac09",
-      "processed_at": "2025-12-22T03:27:40.2599796+03:00"
+      "content_hash": "757ad3060ba05447",
+      "processed_at": "2025-12-22T04:42:30.1131987+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -336,11 +501,11 @@
       "property": "requisite",
       "code": "individual",
       "name": "ИП1232312",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (10).yml",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (10).yml",
       "file_size": 1241,
       "mod_time": "2025-12-22T02:48:58.2210197+03:00",
-      "content_hash": "05a6ecb3",
-      "processed_at": "2025-12-22T03:27:40.2599796+03:00"
+      "content_hash": "de6b7a5d44630337",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -500,177 +665,12 @@
       "object": "client",
       "property": "requisite",
       "code": "individual",
-      "name": "ИП213",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (13).yml",
-      "file_size": 1237,
-      "mod_time": "2025-12-22T02:48:47.8916283+03:00",
-      "content_hash": "0ad69042",
-      "processed_at": "2025-12-22T03:27:40.2599796+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИП213",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП213\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИП213",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
       "name": "ИПi09i09",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (12).yml",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (12).yml",
       "file_size": 1240,
       "mod_time": "2025-12-22T02:48:32.3488456+03:00",
-      "content_hash": "00d08edb",
-      "processed_at": "2025-12-22T03:27:40.2599796+03:00"
+      "content_hash": "7032f40a5e23cd11",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -830,12 +830,12 @@
       "object": "client",
       "property": "requisite",
       "code": "individual",
-      "name": "ИП090",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (14) — копия.yml",
+      "name": "ИП213",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (13).yml",
       "file_size": 1237,
-      "mod_time": "2025-12-22T02:48:44.0700064+03:00",
-      "content_hash": "20a58f70",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
+      "mod_time": "2025-12-22T02:48:47.8916283+03:00",
+      "content_hash": "c11554de2c37787d",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -908,11 +908,11 @@
         }
       ],
       "module": "crm",
-      "name": "ИП090",
+      "name": "ИП213",
       "object": "client",
       "property": "requisite"
     },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП090\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП213\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
     "schema": {
       "$id": "/crm/client/individual/schema.json",
       "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -980,997 +980,7 @@
         "tax_system",
         "registration_address"
       ],
-      "title": "ИП090",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
-      "name": "ИПasdasd",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (13) — копия.yml",
-      "file_size": 1240,
-      "mod_time": "2025-12-22T02:48:51.6396057+03:00",
-      "content_hash": "62617601",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИПasdasd",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПasdasd\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИПasdasd",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
-      "name": "ИП2",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (14).yml",
-      "file_size": 1235,
-      "mod_time": "2025-12-22T02:48:39.2459074+03:00",
-      "content_hash": "db7b5bb2",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИП2",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП2\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИП2",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
-      "name": "ИП*()",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (4).yml",
-      "file_size": 1237,
-      "mod_time": "2025-12-22T00:57:20.5293063+03:00",
-      "content_hash": "d98feec0",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИП*()",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП*()\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИП*()",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
-      "name": "ИП;k;",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (9).yml",
-      "file_size": 1237,
-      "mod_time": "2025-12-22T02:48:15.8855821+03:00",
-      "content_hash": "b144668e",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИП;k;",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП;k;\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИП;k;",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
-      "name": "ИПЦК",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (3).yml",
-      "file_size": 1238,
-      "mod_time": "2025-12-22T00:57:12.369129+03:00",
-      "content_hash": "40c0e240",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИПЦК",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПЦК\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИПЦК",
-      "type": "object"
-    },
-    "validation": {
-      "is_valid": true,
-      "has_fatal": false,
-      "error_count": 0
-    }
-  },
-  {
-    "metadata": {
-      "module": "crm",
-      "object": "client",
-      "property": "requisite",
-      "code": "individual",
-      "name": "ИП\"У",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (4) — копия.yml",
-      "file_size": 1237,
-      "mod_time": "2025-12-22T00:57:16.4771434+03:00",
-      "content_hash": "1d8ec075",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
-    },
-    "parsed_data": {
-      "code": "individual",
-      "fields": [
-        {
-          "code": "inn",
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "name": "ИНН",
-          "pattern": "^[0-9]{12}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "ogrnip",
-          "name": "ОГРНИП",
-          "pattern": "^3[0-9]{14}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "registration_date",
-          "name": "Дата регистрации",
-          "pattern": "YYYY-MM-DD",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "full_name",
-          "max": 100,
-          "min": 5,
-          "name": "ФИО предпринимателя",
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "code": "okved",
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "name": "Код ОКВЭД",
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "required": false,
-          "type": "string"
-        },
-        {
-          "code": "tax_system",
-          "default": "УСН",
-          "name": "Система налогообложения",
-          "required": true,
-          "type": "enum",
-          "values": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ]
-        },
-        {
-          "code": "registration_address",
-          "max": 255,
-          "min": 10,
-          "name": "Адрес регистрации",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "module": "crm",
-      "name": "ИП\"У",
-      "object": "client",
-      "property": "requisite"
-    },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП\\\"У\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
-    "schema": {
-      "$id": "/crm/client/individual/schema.json",
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "additionalProperties": false,
-      "properties": {
-        "full_name": {
-          "maxLength": 100,
-          "minLength": 5,
-          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
-          "title": "ФИО предпринимателя",
-          "type": "string"
-        },
-        "inn": {
-          "examples": [
-            "772756377891",
-            "500100732259"
-          ],
-          "pattern": "^[0-9]{12}$",
-          "title": "ИНН",
-          "type": "string"
-        },
-        "ogrnip": {
-          "pattern": "^3[0-9]{14}$",
-          "title": "ОГРНИП",
-          "type": "string"
-        },
-        "okved": {
-          "examples": [
-            "62.01",
-            "47.11.1"
-          ],
-          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
-          "title": "Код ОКВЭД",
-          "type": "string"
-        },
-        "registration_address": {
-          "maxLength": 255,
-          "minLength": 10,
-          "title": "Адрес регистрации",
-          "type": "string"
-        },
-        "registration_date": {
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-          "title": "Дата регистрации",
-          "type": "string"
-        },
-        "tax_system": {
-          "default": "УСН",
-          "enum": [
-            "ОСН",
-            "УСН",
-            "ПАТЕНТ",
-            "ЕСХН"
-          ],
-          "title": "Система налогообложения",
-          "type": "string"
-        }
-      },
-      "required": [
-        "inn",
-        "ogrnip",
-        "registration_date",
-        "full_name",
-        "tax_system",
-        "registration_address"
-      ],
-      "title": "ИП\"У",
+      "title": "ИП213",
       "type": "object"
     },
     "validation": {
@@ -1986,11 +996,11 @@
       "property": "requisite",
       "code": "individual",
       "name": "ИПadasd",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (11).yml",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (11).yml",
       "file_size": 1239,
       "mod_time": "2025-12-22T02:48:55.0684516+03:00",
-      "content_hash": "5fd60ce1",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
+      "content_hash": "7d44dacc6212dd18",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -2150,12 +1160,672 @@
       "object": "client",
       "property": "requisite",
       "code": "individual",
+      "name": "ИПasdasd",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (13) — копия — копия.yml",
+      "file_size": 1240,
+      "mod_time": "2025-12-22T02:48:51.6396057+03:00",
+      "content_hash": "4c457678b5974e00",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИПasdasd",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПasdasd\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИПasdasd",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИП090",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (14) — копия — копия.yml",
+      "file_size": 1237,
+      "mod_time": "2025-12-22T02:48:44.0700064+03:00",
+      "content_hash": "d35a61b6eb177d2a",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП090",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП090\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП090",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИП2",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (14).yml",
+      "file_size": 1235,
+      "mod_time": "2025-12-22T02:48:39.2459074+03:00",
+      "content_hash": "d1d33764811bf0e0",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП2",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП2\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП2",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИПЦК",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (21) — копия.yml",
+      "file_size": 1238,
+      "mod_time": "2025-12-22T00:57:12.369129+03:00",
+      "content_hash": "e71836e34ccdc073",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИПЦК",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПЦК\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИПЦК",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
       "name": "ИПщ",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (2).yml",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (2).yml",
       "file_size": 1236,
       "mod_time": "2025-12-22T00:57:00.7940251+03:00",
-      "content_hash": "5c753be4",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
+      "content_hash": "9452c97cd44c000f",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -2315,12 +1985,837 @@
       "object": "client",
       "property": "requisite",
       "code": "individual",
+      "name": "ИП*()",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (22) — копия.yml",
+      "file_size": 1237,
+      "mod_time": "2025-12-22T00:57:20.5293063+03:00",
+      "content_hash": "7ecffe1734e2caad",
+      "processed_at": "2025-12-22T04:42:30.1141958+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП*()",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП*()\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП*()",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИПasdad",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия — копия.yml",
+      "file_size": 1239,
+      "mod_time": "2025-12-22T04:25:36.1413271+03:00",
+      "content_hash": "f776aaf73f430dbc",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИПasdad",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПasdad\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИПasdad",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИП09909",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия (131) — копия — копия — копия.yml",
+      "file_size": 1239,
+      "mod_time": "2025-12-22T04:28:43.4919916+03:00",
+      "content_hash": "a76c21e697050ac4",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП09909",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП09909\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП09909",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИПщшщшг",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия (129) — копия — копия — копия.yml",
+      "file_size": 1244,
+      "mod_time": "2025-12-22T04:28:39.0498701+03:00",
+      "content_hash": "53a1da62c0eb10fb",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИПщшщшг",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПщшщшг\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИПщшщшг",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИП",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия (12) — копия — копия — копия.yml",
+      "file_size": 1234,
+      "mod_time": "2025-12-21T23:53:44.3262245+03:00",
+      "content_hash": "58ca15159db84d39",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
       "name": "ИПТЬБ",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия — копия — копия (5) — копия.yml",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (23) — копия — копия.yml",
       "file_size": 1240,
       "mod_time": "2025-12-22T00:57:24.7669735+03:00",
-      "content_hash": "809d7596",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
+      "content_hash": "cbe5da901c0fe519",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -2480,12 +2975,12 @@
       "object": "client",
       "property": "requisite",
       "code": "individual",
-      "name": "ИПТ",
-      "source_file": "..\\..\\sources\\presets\\package3\\entities\\individual — копия (46) — копия.yml",
-      "file_size": 1236,
-      "mod_time": "2025-12-22T03:27:35.5547991+03:00",
-      "content_hash": "c0337331",
-      "processed_at": "2025-12-22T03:27:40.2609725+03:00"
+      "name": "ИП\"У",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (22) — копия — копия.yml",
+      "file_size": 1237,
+      "mod_time": "2025-12-22T00:57:16.4771434+03:00",
+      "content_hash": "e2e55e77b42bea14",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
     },
     "parsed_data": {
       "code": "individual",
@@ -2558,11 +3053,11 @@
         }
       ],
       "module": "crm",
-      "name": "ИПТ",
+      "name": "ИП\"У",
       "object": "client",
       "property": "requisite"
     },
-    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИПТ\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП\\\"У\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
     "schema": {
       "$id": "/crm/client/individual/schema.json",
       "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2630,7 +3125,337 @@
         "tax_system",
         "registration_address"
       ],
-      "title": "ИПТ",
+      "title": "ИП\"У",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИП;k;",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия — копия — копия (27) — копия.yml",
+      "file_size": 1237,
+      "mod_time": "2025-12-22T02:48:15.8855821+03:00",
+      "content_hash": "993ed116de18a402",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП;k;",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП;k;\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП;k;",
+      "type": "object"
+    },
+    "validation": {
+      "is_valid": true,
+      "has_fatal": false,
+      "error_count": 0
+    }
+  },
+  {
+    "metadata": {
+      "module": "crm",
+      "object": "client",
+      "property": "requisite",
+      "code": "individual",
+      "name": "ИП123123",
+      "source_file": "..\\..\\sources\\presets\\package4\\entities\\individual — копия (119) — копия — копия.yml",
+      "file_size": 1240,
+      "mod_time": "2025-12-22T04:28:33.1047698+03:00",
+      "content_hash": "bc262697c0800320",
+      "processed_at": "2025-12-22T04:42:30.1151933+03:00"
+    },
+    "parsed_data": {
+      "code": "individual",
+      "fields": [
+        {
+          "code": "inn",
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "name": "ИНН",
+          "pattern": "^[0-9]{12}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "ogrnip",
+          "name": "ОГРНИП",
+          "pattern": "^3[0-9]{14}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "registration_date",
+          "name": "Дата регистрации",
+          "pattern": "YYYY-MM-DD",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "full_name",
+          "max": 100,
+          "min": 5,
+          "name": "ФИО предпринимателя",
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "code": "okved",
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "name": "Код ОКВЭД",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "code": "tax_system",
+          "default": "УСН",
+          "name": "Система налогообложения",
+          "required": true,
+          "type": "enum",
+          "values": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ]
+        },
+        {
+          "code": "registration_address",
+          "max": 255,
+          "min": 10,
+          "name": "Адрес регистрации",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "module": "crm",
+      "name": "ИП123123",
+      "object": "client",
+      "property": "requisite"
+    },
+    "json_data": "{\n  \"code\": \"individual\",\n  \"fields\": [\n    {\n      \"code\": \"inn\",\n      \"examples\": [\n        \"772756377891\",\n        \"500100732259\"\n      ],\n      \"name\": \"ИНН\",\n      \"pattern\": \"^[0-9]{12}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"ogrnip\",\n      \"name\": \"ОГРНИП\",\n      \"pattern\": \"^3[0-9]{14}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"registration_date\",\n      \"name\": \"Дата регистрации\",\n      \"pattern\": \"YYYY-MM-DD\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"full_name\",\n      \"max\": 100,\n      \"min\": 5,\n      \"name\": \"ФИО предпринимателя\",\n      \"pattern\": \"^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$\",\n      \"required\": true,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"okved\",\n      \"examples\": [\n        \"62.01\",\n        \"47.11.1\"\n      ],\n      \"name\": \"Код ОКВЭД\",\n      \"pattern\": \"^[0-9]{2}\\\\.[0-9]{2}(?:\\\\.[0-9]{1,2})?$\",\n      \"required\": false,\n      \"type\": \"string\"\n    },\n    {\n      \"code\": \"tax_system\",\n      \"default\": \"УСН\",\n      \"name\": \"Система налогообложения\",\n      \"required\": true,\n      \"type\": \"enum\",\n      \"values\": [\n        \"ОСН\",\n        \"УСН\",\n        \"ПАТЕНТ\",\n        \"ЕСХН\"\n      ]\n    },\n    {\n      \"code\": \"registration_address\",\n      \"max\": 255,\n      \"min\": 10,\n      \"name\": \"Адрес регистрации\",\n      \"required\": true,\n      \"type\": \"string\"\n    }\n  ],\n  \"module\": \"crm\",\n  \"name\": \"ИП123123\",\n  \"object\": \"client\",\n  \"property\": \"requisite\"\n}",
+    "schema": {
+      "$id": "/crm/client/individual/schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "maxLength": 100,
+          "minLength": 5,
+          "pattern": "^[А-ЯЁ][а-яё]+(?: [А-ЯЁ][а-яё]+){2}$",
+          "title": "ФИО предпринимателя",
+          "type": "string"
+        },
+        "inn": {
+          "examples": [
+            "772756377891",
+            "500100732259"
+          ],
+          "pattern": "^[0-9]{12}$",
+          "title": "ИНН",
+          "type": "string"
+        },
+        "ogrnip": {
+          "pattern": "^3[0-9]{14}$",
+          "title": "ОГРНИП",
+          "type": "string"
+        },
+        "okved": {
+          "examples": [
+            "62.01",
+            "47.11.1"
+          ],
+          "pattern": "^[0-9]{2}\\.[0-9]{2}(?:\\.[0-9]{1,2})?$",
+          "title": "Код ОКВЭД",
+          "type": "string"
+        },
+        "registration_address": {
+          "maxLength": 255,
+          "minLength": 10,
+          "title": "Адрес регистрации",
+          "type": "string"
+        },
+        "registration_date": {
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Дата регистрации",
+          "type": "string"
+        },
+        "tax_system": {
+          "default": "УСН",
+          "enum": [
+            "ОСН",
+            "УСН",
+            "ПАТЕНТ",
+            "ЕСХН"
+          ],
+          "title": "Система налогообложения",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inn",
+        "ogrnip",
+        "registration_date",
+        "full_name",
+        "tax_system",
+        "registration_address"
+      ],
+      "title": "ИП123123",
       "type": "object"
     },
     "validation": {

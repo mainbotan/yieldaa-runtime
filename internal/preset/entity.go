@@ -3,7 +3,6 @@ package preset
 import (
 	"encoding/json"
 	"fmt"
-	"hash/crc32"
 	"os"
 
 	"github.com/ghodss/yaml"
@@ -18,7 +17,8 @@ func ProcessEntity(file EntityFile) ProcessedEntity {
 		return result
 	}
 
-	result.ContentHash = crc32.ChecksumIEEE(data)
+	// xxHash64 вместо CRC32
+	result.ContentHash = calculateContentHash(data)
 
 	// .yml -> json without inter go struct
 	jsonData, err := yaml.YAMLToJSON(data)

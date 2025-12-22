@@ -1,12 +1,34 @@
 package preset
 
 import (
+	"encoding/binary"
 	"fmt"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/cespare/xxhash/v2"
 )
+
+func calculateContentHash(content []byte) string {
+	hash := xxhash.Sum64(content)
+	return fmt.Sprintf("%016x", hash)
+}
+
+func calculateStructureHash(files []EntityFile) uint32 {
+	hash := xxhash.New()
+	for _, f := range files {
+		relPath := strings.TrimPrefix(f.Path, filepath.Dir(f.Path)+string(os.PathSeparator))
+		hash.Write([]byte(relPath))
+		binary.Write(hash, binary.LittleEndian, f.Size)
+		binary.Write(hash, binary.LittleEndian, f.ModTime.Unix())
+	}
+
+	result := binary.LittleEndian.Uint32(hash.Sum(nil)[:4])
+	return result
+}
 
 func GetField(data map[string]any, key string) any {
 	if val, ok := data[key]; ok {

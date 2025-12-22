@@ -24,7 +24,7 @@ func GenerateJSONSchema(parsed map[string]any) (map[string]any, error) {
 
 	// generate json_schema
 	schema := map[string]any{
-		"$schema": "https://json-schema.org/draft/2020-12/schema",
+		"$schema": JSONSchemaDraft,
 		"$id": fmt.Sprintf("/%s/%s/%s/schema.json",
 			parsed["module"], parsed["object"], parsed["code"]),
 		"type":                 "object",

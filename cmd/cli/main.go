@@ -9,7 +9,7 @@ import (
 
 func main() {
 	pkg, processed, fatalErrs := preset.LoadAndProcessPreset(
-		"./../../sources/presets/package3/", 100)
+		"./../../sources/presets/package4/", 100)
 
 	preset.PrintResults(pkg, processed, fatalErrs)
 

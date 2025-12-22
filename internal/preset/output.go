@@ -45,7 +45,7 @@ func convertToEntityOutput(pe ProcessedEntity) EntityOutput {
 		SourceFile:  pe.File.Path,
 		FileSize:    pe.File.Size,
 		ModTime:     pe.File.ModTime,
-		ContentHash: fmt.Sprintf("%08x", pe.ContentHash),
+		ContentHash: pe.ContentHash,
 		ProcessedAt: time.Now(),
 	}
 
